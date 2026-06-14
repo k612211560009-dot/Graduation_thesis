@@ -9,3 +9,11 @@ venv/
 env/
 .env
 .venv/
+
+# Project specific files
+output/*.log
+
+# System files
+.DS_Store
+.vscode/
+.idea/
