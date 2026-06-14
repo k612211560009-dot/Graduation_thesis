@@ -1,0 +1,16 @@
+Rule ID,Rule Name,Rule Category,Applicable Objects,Monitoring Condition,Threshold Type,Severity,Response Mode,Managerial Intervention
+DG01,Complete Information,Quality,Purchase Order,ReviewOrderInformation = Incomplete AND supporting notes missing,Fixed,High,Hard Stop,No
+DG02,Mandatory Document Validation,Quality,Purchase Order,Mandatory attachments missing,Fixed,High,Hard Stop,No
+DG03,Communication Traceability,Communication,Communication Event,Channel = Email / Zalo / WhatsApp,Statistical,Medium,Intervention Package,Yes
+DG04,Ownership Assignment,Ownership,Purchase Order,Owner not assigned,Fixed,High,Hard Stop,No
+DG05,Vendor Communication Traceability,Communication,Vendor Communication,Vendor communication through non-standard channel,Statistical,Medium,Intervention Package,Yes
+DG06,Quotation Traceability,Traceability,Vendor Quotation,No linked Purchase Order reference,Fixed,High,Hard Stop,No
+DG07,Negotiation Auditability,Traceability,Vendor Quotation,Revision without documented change reason,Statistical,Medium,Intervention Package,Yes
+DG08,BOM Rework Control,Version,BOM,Validation cycle repeated without documented changes,Statistical,Medium,Intervention Package,Yes
+DG09,Rework Justification,Quality,BOM,ValidateBOM = Incomplete AND no reason provided,Fixed,High,Hard Stop,No
+DG10,Master Data Consistency,Version,BOM / Product Master Data,Revision reason contains naming inconsistency,Statistical,Medium,Intervention Package,Yes
+DG11,Version Consistency,Version,Technical Documents,Multiple active versions detected,Fixed,Medium,Intervention Package,Yes
+DG12,Document Lineage Control,Traceability,All Documents,No upstream reference exists,Fixed,High,Hard Stop,No
+DG13,Traceability Completeness,Traceability,Purchase Order Lifecycle,Traceability chain incomplete,Fixed,Medium,Intervention Package,Yes
+DG14,Operational Timeliness Monitoring,Quality,Shipment Document,Status update exceeds defined threshold,Statistical,Medium,Intervention Package,Yes
+DG15,Ownership Governance Monitoring,Ownership,All Documents,Ownership changes without reassignment,Fixed,Medium,Intervention Package,Yes

@@ -1,0 +1,80 @@
+2026-06-15 00:09:40  INFO      main – ======================================================================
+2026-06-15 00:09:40  INFO      main –   CRM-BASED MONITORING FRAMEWORK
+2026-06-15 00:09:40  INFO      main – ======================================================================
+2026-06-15 00:09:40  INFO      run_rule_design – === RULE DESIGN INSTANCE START ===
+2026-06-15 00:09:40  INFO      rule_design.rule_loader – Loading rule specification from: C:\Users\VTC\Desktop\KLTN\demo\crm_v2\data\rule_specification.csv
+2026-06-15 00:09:40  INFO      rule_design.rule_loader – Loaded 15 governance rules.
+2026-06-15 00:09:40  INFO      run_rule_design – Loaded 15 rules.
+2026-06-15 00:09:40  INFO      rule_design.rule_repository_builder – Built repository: RuleRepository(15 rules | 9 deterministic, 6 statistical | categories: Communication:2, Ownership:2, Quality:4, Traceability:4, Version:3)
+2026-06-15 00:09:40  INFO      rule_design.rule_repository_builder – Rule repository written to C:\Users\VTC\Desktop\KLTN\demo\crm_v2\data\rule_repository.csv (15 rules).
+2026-06-15 00:09:40  INFO      run_rule_design – Rule repository written → C:\Users\VTC\Desktop\KLTN\demo\crm_v2\data\rule_repository.csv
+2026-06-15 00:09:40  INFO      run_rule_design – RuleRepository(15 rules | 9 deterministic, 6 statistical | categories: Communication:2, Ownership:2, Quality:4, Traceability:4, Version:3)
+2026-06-15 00:09:40  INFO      run_rule_design – Deterministic rules : ['DG01', 'DG02', 'DG04', 'DG06', 'DG09', 'DG11', 'DG12', 'DG13', 'DG15']
+2026-06-15 00:09:40  INFO      run_rule_design – Statistical rules   : ['DG03', 'DG05', 'DG07', 'DG08', 'DG10', 'DG14']
+2026-06-15 00:09:40  INFO      run_rule_design – === RULE DESIGN INSTANCE COMPLETE ===
+2026-06-15 00:09:40  INFO      main – Rule Design done in 0.46s
+2026-06-15 00:09:41  INFO      run_monitoring – === MONITORING INSTANCE START ===
+2026-06-15 00:09:41  INFO      monitoring.event_stream_processor – OCEL loaded: 1008 events, 309 objects
+2026-06-15 00:09:41  INFO      run_monitoring – Events to process: 1008
+2026-06-15 00:09:41  INFO      monitoring.rule_engine – RuleEngine: 9 deterministic rules: ['DG01', 'DG02', 'DG04', 'DG06', 'DG09', 'DG11', 'DG12', 'DG13', 'DG15']
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine – ThresholdEngine: 6 statistical rules: ['DG03', 'DG05', 'DG07', 'DG08', 'DG10', 'DG14']
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine – Calibrating thresholds from 1008 events…
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG03: P90=4.10  P95=5.00  (n=50, nonzero=11)
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG05: P90=2.00  P95=2.00  (n=50, nonzero=11)
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG07: P90=2.00  P95=2.00  (n=50, nonzero=14)
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG08: P90=2.00  P95=2.00  (n=50, nonzero=14)
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG10: P90=1.00  P95=1.00  (n=50, nonzero=7)
+2026-06-15 00:09:41  INFO      monitoring.threshold_engine –   DG14: P90=30.00  P95=33.65  (n=50, nonzero=50)
+2026-06-15 00:09:41  INFO      run_monitoring – Processing event stream…
+2026-06-15 00:09:41  INFO      run_monitoring –   100 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   200 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   300 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   400 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   500 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   600 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   700 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   800 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   900 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   1000 / 1008
+2026-06-15 00:09:41  INFO      run_monitoring – Finalizing post-stream rules…
+2026-06-15 00:09:41  INFO      run_monitoring – Written → C:\Users\VTC\Desktop\KLTN\demo\crm_v2\output\detected_violations.csv  (475 rows)
+2026-06-15 00:09:41  INFO      run_monitoring – Written → C:\Users\VTC\Desktop\KLTN\demo\crm_v2\output\intervention_packages.csv  (3 rows)
+2026-06-15 00:09:41  INFO      run_monitoring – === MONITORING COMPLETE ===
+2026-06-15 00:09:41  INFO      run_monitoring –   total_events                       : 1008
+2026-06-15 00:09:41  INFO      run_monitoring –   total_violations                   : 475
+2026-06-15 00:09:41  INFO      run_monitoring –   deterministic_violations           : 422
+2026-06-15 00:09:41  INFO      run_monitoring –   statistical_violations             : 53
+2026-06-15 00:09:41  INFO      run_monitoring –   critical_threshold_breaches        : 3
+2026-06-15 00:09:41  INFO      run_monitoring –   warning_threshold_breaches         : 50
+2026-06-15 00:09:41  INFO      run_monitoring –   intervention_packages              : 3
+2026-06-15 00:09:41  INFO      main – Monitoring done in 0.06s | violations=475  packages=3
+2026-06-15 00:09:41  INFO      run_evaluation – === EVALUATION INSTANCE START ===
+2026-06-15 00:09:41  INFO      evaluation.evaluation_data_loader – Ground truth loaded: 117 keys from 8 rules.
+2026-06-15 00:09:41  INFO      evaluation.evaluation_data_loader – Detected violations loaded: 113 keys (filtered to GT rules: ['DG01', 'DG03', 'DG05', 'DG07', 'DG08', 'DG10', 'DG13', 'DG14']).
+2026-06-15 00:09:41  INFO      evaluation.evaluation_data_loader – Evaluation data: 117 GT violations, 113 detected (filtered to GT rules).
+2026-06-15 00:09:41  INFO      run_evaluation – Confusion matrix: ConfusionMatrix(TP=100, FP=13, FN=17, TN=566)
+2026-06-15 00:09:41  INFO      evaluation.confusion_matrix – Confusion matrix written to C:\Users\VTC\Desktop\KLTN\demo\crm_v2\output\confusion_matrix.csv.
+2026-06-15 00:09:41  INFO      evaluation.metrics – Evaluation metrics written to C:\Users\VTC\Desktop\KLTN\demo\crm_v2\output\evaluation_results.csv.
+2026-06-15 00:09:41  INFO      run_evaluation – Metrics report:
+============================================================
+  EVALUATION METRICS REPORT
+============================================================
+  Rule            TP    FP    FN  Precision     Recall         F1
+  --------------------------------------------------------
+  DG01             8     2     0     0.8000     1.0000     0.8889
+  DG03             5     0    10     1.0000     0.3333     0.5000
+  DG05            11     0     2     1.0000     0.8462     0.9167
+  DG07            11     1     1     0.9167     0.9167     0.9167
+  DG08             8     0     3     1.0000     0.7273     0.8421
+  DG10             6     1     0     0.8571     1.0000     0.9231
+  DG13            46     4     0     0.9200     1.0000     0.9583
+  DG14             5     5     1     0.5000     0.8333     0.6250
+  --------------------------------------------------------
+  OVERALL        100    13    17     0.8850     0.8547     0.8696
+============================================================
+2026-06-15 00:09:41  INFO      run_evaluation – === EVALUATION INSTANCE COMPLETE ===
+2026-06-15 00:09:41  INFO      main – Evaluation done in 0.01s | P=0.8850  R=0.8547  F1=0.8696
+2026-06-15 00:09:41  INFO      main – ======================================================================
+2026-06-15 00:09:41  INFO      main –   Total runtime: 0.63s
+2026-06-15 00:09:41  INFO      main –   Outputs → C:\Users\VTC\Desktop\KLTN\demo\crm_v2\output
+2026-06-15 00:09:41  INFO      main – ======================================================================
