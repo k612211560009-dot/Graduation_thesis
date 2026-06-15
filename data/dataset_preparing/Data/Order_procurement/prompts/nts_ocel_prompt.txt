@@ -1,0 +1,217 @@
+You are acting as the Generator component of a process mining research framework.
+
+Your task is NOT to invent a business process.
+
+Your task is to transform the provided NTS business documentation into a realistic synthetic OCEL 2.0 event log.
+
+## AVAILABLE INPUTS
+
+You will receive four files:
+
+1. NTS_bds.md
+   Business Specification describing:
+
+   * process scope
+   * participants
+   * business objects
+   * activities
+   * handovers
+   * governance responsibilities
+   * vulnerabilities
+   * root causes
+
+2. BPMN_NTS.md
+   BPMN process description describing:
+
+   * process flow
+   * gateways
+   * activity sequence
+   * department interactions
+
+3. Cong_viec_PM_MinhNV.md
+   Internal operational findings describing:
+
+   * practical issues
+   * communication problems
+   * delays
+   * ownership issues
+   * document management weaknesses
+
+4. public_ocel_schema_full.json
+   A public OCEL schema example.
+
+IMPORTANT:
+
+The public OCEL file is ONLY a schema reference.
+
+Use it ONLY to understand:
+
+* JSON structure
+* field names
+* nesting hierarchy
+* relationship representation
+* OCEL formatting
+
+DO NOT copy:
+
+* activities
+* objects
+* IDs
+* timestamps
+* business content
+* process logic
+
+## PRIMARY OBJECTIVE
+
+Generate a synthetic OCEL 2.0 event log that realistically represents the current-state Order Management process of NTS, reflecting both BPMN flow and documented operational weaknesses.
+
+KEY REQUIREMENTS FOR v3:
+- Model each department as separate objects (DEPT-SALES, DEPT-PM, DEPT-TECHNICAL, DEPT-ACCOUNTING, DEPT-LOGISTICS, DEPT-ADMIN) with rich relationships: performedBy, actor, handoverTo, recipient, notified, coordinator.
+- Reduce reliance on string "department" in attributes; prefer relationship links to Department objects.
+- Inject vulnerabilities naturally through:
+  - Channel usage (Zalo, WhatsApp, Phone)
+  - Realistic time gaps
+  - Rework loops (especially ValidateBOM ↔ RequestTechnicalClarification)
+  - Weak or missing document relationships
+  - Version and naming inconsistencies
+- Maintain approximately 50 PO cases covering Jan–Apr 2026.
+
+OUTPUT
+Return ONLY valid OCEL 2.0 JSON. No explanations.
+
+
+## GENERATION LOGIC
+
+Step 1
+
+Read and understand:
+
+* Business Specification
+* BPMN Description
+* Internal Findings
+
+Step 2
+
+Identify:
+
+* activities
+* departments
+* roles
+* business objects
+* handovers
+* ownership relationships
+* document flows
+
+Step 3
+
+Construct realistic process instances.
+
+Each process instance should follow the BPMN flow unless a documented vulnerability is intentionally represented.
+
+Step 4
+
+Generate OCEL objects and events.
+
+Objects and events must be derived from the documentation.
+
+Do not invent business concepts not supported by the documents.
+
+
+
+## PROCESS CONFORMANCE
+
+Activities must come from BPMN and Business Specification.
+
+Object types must come from Business Specification.
+
+Ownership and handover relationships must come from Business Specification.
+
+Process ordering must follow BPMN.
+
+
+
+## TIME PERIOD
+
+Generate realistic operations between:
+
+2026-01-01
+and
+2026-04-30
+
+Assume NTS has recently adopted CRM and governance controls.
+
+Generate approximately 25-60 Purchase Order cases.
+
+
+
+## REALISTIC CURRENT-STATE BEHAVIOR
+
+The process is NOT perfect.
+
+Reflect operational weaknesses documented in the internal findings.
+
+Examples include:
+
+* delayed updates
+* communication fragmentation
+* document corrections
+* repeated validation
+* BOM rework
+* missing information
+* inconsistent naming
+* synchronization issues
+
+Do not inject problems randomly.
+
+Only generate issues that are supported by the provided documents.
+
+
+
+## ROOT CAUSE REPRESENTATION
+
+The generated event log should naturally contain evidence supporting the documented root causes.
+
+The root causes should emerge from:
+
+* event sequences
+* waiting times
+* object relationships
+* handovers
+* ownership transitions
+
+Do not explicitly write root cause labels inside the OCEL.
+
+
+
+## SCHEMA REQUIREMENT
+
+The final output MUST follow the structure demonstrated in:
+
+public_ocel_schema_full.json
+
+Reuse:
+
+* top-level structure
+* event structure
+* object structure
+* relationship structure
+
+Do not reuse business content.
+
+
+
+## OUTPUT REQUIREMENT
+
+Return ONLY valid OCEL 2.0 JSON.
+
+No explanations.
+
+No markdown.
+
+No comments.
+
+No text before or after the JSON.
+
+First analyze all attached files.
+
+Then generate the OCEL 2.0 event log strictly based on those documents.

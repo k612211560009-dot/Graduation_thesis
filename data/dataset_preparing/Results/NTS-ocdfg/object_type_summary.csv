@@ -1,0 +1,9 @@
+object_type,object_instance_count,n_activities,n_df_edges,cooccurring_object_types,dfg_png
+BOM,50,3,3,Department; Vendor; VendorQuotation,./Results/NTS-ocdfg/visualizations\BOM__dfg.png
+Department,6,22,255,BOM; InventoryRecord; LicensingDocument; PurchaseOrder; ShipmentDocument; Vendor; VendorQuotation,./Results/NTS-ocdfg/visualizations\Department__dfg.png
+InventoryRecord,50,6,6,Department; PurchaseOrder; ShipmentDocument,./Results/NTS-ocdfg/visualizations\InventoryRecord__dfg.png
+LicensingDocument,50,0,0,Department; PurchaseOrder,./Results/NTS-ocdfg/visualizations\LicensingDocument__dfg.png
+PurchaseOrder,50,16,17,Department; InventoryRecord; LicensingDocument; ShipmentDocument; Vendor; VendorQuotation,./Results/NTS-ocdfg/visualizations\PurchaseOrder__dfg.png
+ShipmentDocument,50,5,4,Department; InventoryRecord; PurchaseOrder,./Results/NTS-ocdfg/visualizations\ShipmentDocument__dfg.png
+Vendor,3,4,15,BOM; Department; PurchaseOrder; VendorQuotation,./Results/NTS-ocdfg/visualizations\Vendor__dfg.png
+VendorQuotation,50,7,7,BOM; Department; PurchaseOrder; Vendor,./Results/NTS-ocdfg/visualizations\VendorQuotation__dfg.png

@@ -1,0 +1,1734 @@
+[
+  {
+    "object_type": "BOM",
+    "object_instance_count": 50,
+    "n_activities": 3,
+    "n_df_edges": 3,
+    "activities": [
+      "RequestTechnicalClarification",
+      "ValidateBOM",
+      "VerifyProductConfiguration"
+    ],
+    "directly_follows": [
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "ValidateBOM",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "RequestTechnicalClarification",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "VerifyProductConfiguration",
+        "frequency": 50
+      }
+    ],
+    "cooccurring_object_types": [
+      "Department",
+      "Vendor",
+      "VendorQuotation"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\BOM__dfg.png"
+  },
+  {
+    "object_type": "Department",
+    "object_instance_count": 6,
+    "n_activities": 22,
+    "n_df_edges": 255,
+    "activities": [
+      "ApproveFinancialDocuments",
+      "CloseOrder",
+      "ConfirmCustomerOrder",
+      "CreateVendorOrder",
+      "EstimateDeliveryTimeline",
+      "ProcessShipment",
+      "ReceiveGoods",
+      "ReceiveVendorQuotation",
+      "RequestAdditionalInformation",
+      "RequestTechnicalClarification",
+      "RequestVendorQuote",
+      "ReturnOrderForRevision",
+      "ReviewOrderInformation",
+      "StockInInventory",
+      "SubmitPurchaseOrder",
+      "ValidateBOM",
+      "ValidateQuotation",
+      "ValidateTaxInformation",
+      "VerifyGoodsReceipt",
+      "VerifyLicensingInformation",
+      "VerifyProductConfiguration",
+      "VerifyShipmentInformation"
+    ],
+    "directly_follows": [
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 8
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "CloseOrder",
+        "frequency": 2
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "CreateVendorOrder",
+        "frequency": 19
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 1
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 3
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "RequestVendorQuote",
+        "frequency": 2
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ReviewOrderInformation",
+        "frequency": 1
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "StockInInventory",
+        "frequency": 18
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ValidateBOM",
+        "frequency": 5
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ValidateQuotation",
+        "frequency": 22
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "ValidateTaxInformation",
+        "frequency": 6
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "VerifyLicensingInformation",
+        "frequency": 3
+      },
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "VerifyShipmentInformation",
+        "frequency": 10
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 2
+      },
+      {
+        "source": "CloseOrder",
+        "target": "CloseOrder",
+        "frequency": 24
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 20
+      },
+      {
+        "source": "CloseOrder",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 14
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ReceiveGoods",
+        "frequency": 17
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 1
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ReviewOrderInformation",
+        "frequency": 9
+      },
+      {
+        "source": "CloseOrder",
+        "target": "StockInInventory",
+        "frequency": 23
+      },
+      {
+        "source": "CloseOrder",
+        "target": "SubmitPurchaseOrder",
+        "frequency": 2
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ValidateQuotation",
+        "frequency": 13
+      },
+      {
+        "source": "CloseOrder",
+        "target": "ValidateTaxInformation",
+        "frequency": 16
+      },
+      {
+        "source": "CloseOrder",
+        "target": "VerifyLicensingInformation",
+        "frequency": 3
+      },
+      {
+        "source": "CloseOrder",
+        "target": "VerifyShipmentInformation",
+        "frequency": 3
+      },
+      {
+        "source": "ConfirmCustomerOrder",
+        "target": "CloseOrder",
+        "frequency": 2
+      },
+      {
+        "source": "ConfirmCustomerOrder",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 20
+      },
+      {
+        "source": "ConfirmCustomerOrder",
+        "target": "ReviewOrderInformation",
+        "frequency": 26
+      },
+      {
+        "source": "ConfirmCustomerOrder",
+        "target": "SubmitPurchaseOrder",
+        "frequency": 52
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 1
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "CreateVendorOrder",
+        "frequency": 10
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 15
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ProcessShipment",
+        "frequency": 9
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ReceiveGoods",
+        "frequency": 2
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 4
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "RequestAdditionalInformation",
+        "frequency": 3
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "RequestVendorQuote",
+        "frequency": 6
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ReviewOrderInformation",
+        "frequency": 1
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ValidateBOM",
+        "frequency": 6
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 5
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "VerifyLicensingInformation",
+        "frequency": 22
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "VerifyProductConfiguration",
+        "frequency": 2
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "VerifyShipmentInformation",
+        "frequency": 14
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "CloseOrder",
+        "frequency": 4
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 8
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "CreateVendorOrder",
+        "frequency": 8
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 50
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ProcessShipment",
+        "frequency": 30
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ReceiveGoods",
+        "frequency": 31
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 1
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ReviewOrderInformation",
+        "frequency": 9
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "StockInInventory",
+        "frequency": 2
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ValidateBOM",
+        "frequency": 3
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ValidateQuotation",
+        "frequency": 1
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "ValidateTaxInformation",
+        "frequency": 1
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 23
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "VerifyLicensingInformation",
+        "frequency": 19
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "VerifyProductConfiguration",
+        "frequency": 1
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "VerifyShipmentInformation",
+        "frequency": 9
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 4
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "CreateVendorOrder",
+        "frequency": 16
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 15
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ProcessShipment",
+        "frequency": 15
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ReceiveGoods",
+        "frequency": 14
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 4
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "RequestTechnicalClarification",
+        "frequency": 2
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ReviewOrderInformation",
+        "frequency": 3
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "StockInInventory",
+        "frequency": 2
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ValidateBOM",
+        "frequency": 5
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "ValidateQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 12
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "VerifyLicensingInformation",
+        "frequency": 28
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "VerifyProductConfiguration",
+        "frequency": 8
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "VerifyShipmentInformation",
+        "frequency": 20
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "CloseOrder",
+        "frequency": 60
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 4
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 6
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ProcessShipment",
+        "frequency": 3
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ReceiveGoods",
+        "frequency": 28
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ReviewOrderInformation",
+        "frequency": 2
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "StockInInventory",
+        "frequency": 37
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ValidateBOM",
+        "frequency": 2
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "ValidateTaxInformation",
+        "frequency": 1
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 1
+      },
+      {
+        "source": "ReceiveGoods",
+        "target": "VerifyProductConfiguration",
+        "frequency": 6
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 3
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "CreateVendorOrder",
+        "frequency": 5
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 1
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ProcessShipment",
+        "frequency": 2
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 6
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 1
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "RequestVendorQuote",
+        "frequency": 10
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ReviewOrderInformation",
+        "frequency": 2
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ValidateBOM",
+        "frequency": 11
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ValidateTaxInformation",
+        "frequency": 2
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "VerifyLicensingInformation",
+        "frequency": 6
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 1
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 3
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 3
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ProcessShipment",
+        "frequency": 1
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ReceiveGoods",
+        "frequency": 1
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 2
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ReviewOrderInformation",
+        "frequency": 3
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ValidateBOM",
+        "frequency": 1
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "VerifyLicensingInformation",
+        "frequency": 1
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 3
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "CloseOrder",
+        "frequency": 1
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 3
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "RequestTechnicalClarification",
+        "frequency": 4
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "ValidateBOM",
+        "frequency": 10
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "ValidateQuotation",
+        "frequency": 3
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "VerifyProductConfiguration",
+        "frequency": 2
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "VerifyShipmentInformation",
+        "frequency": 1
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 1
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 4
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "CreateVendorOrder",
+        "frequency": 3
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 7
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ProcessShipment",
+        "frequency": 3
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ReceiveGoods",
+        "frequency": 2
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "RequestVendorQuote",
+        "frequency": 9
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ReviewOrderInformation",
+        "frequency": 3
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ValidateBOM",
+        "frequency": 6
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ValidateTaxInformation",
+        "frequency": 3
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "VerifyLicensingInformation",
+        "frequency": 2
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "VerifyShipmentInformation",
+        "frequency": 5
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 2
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 1
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "RequestVendorQuote",
+        "frequency": 1
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ReturnOrderForRevision",
+        "frequency": 2
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "StockInInventory",
+        "frequency": 2
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ValidateQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ValidateTaxInformation",
+        "frequency": 2
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "VerifyShipmentInformation",
+        "frequency": 2
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 5
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "CloseOrder",
+        "frequency": 1
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 5
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "CreateVendorOrder",
+        "frequency": 1
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 12
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ReceiveGoods",
+        "frequency": 6
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 8
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "RequestVendorQuote",
+        "frequency": 13
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ReturnOrderForRevision",
+        "frequency": 2
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ReviewOrderInformation",
+        "frequency": 26
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "SubmitPurchaseOrder",
+        "frequency": 26
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ValidateQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "ValidateTaxInformation",
+        "frequency": 4
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "VerifyLicensingInformation",
+        "frequency": 4
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 3
+      },
+      {
+        "source": "StockInInventory",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 1
+      },
+      {
+        "source": "StockInInventory",
+        "target": "CloseOrder",
+        "frequency": 36
+      },
+      {
+        "source": "StockInInventory",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 7
+      },
+      {
+        "source": "StockInInventory",
+        "target": "ProcessShipment",
+        "frequency": 1
+      },
+      {
+        "source": "StockInInventory",
+        "target": "ReceiveGoods",
+        "frequency": 3
+      },
+      {
+        "source": "StockInInventory",
+        "target": "StockInInventory",
+        "frequency": 14
+      },
+      {
+        "source": "StockInInventory",
+        "target": "ValidateQuotation",
+        "frequency": 6
+      },
+      {
+        "source": "StockInInventory",
+        "target": "ValidateTaxInformation",
+        "frequency": 1
+      },
+      {
+        "source": "StockInInventory",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 7
+      },
+      {
+        "source": "StockInInventory",
+        "target": "VerifyLicensingInformation",
+        "frequency": 12
+      },
+      {
+        "source": "StockInInventory",
+        "target": "VerifyShipmentInformation",
+        "frequency": 11
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 9
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "CloseOrder",
+        "frequency": 4
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 12
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 9
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ReceiveGoods",
+        "frequency": 4
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 5
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "RequestAdditionalInformation",
+        "frequency": 3
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "RequestVendorQuote",
+        "frequency": 2
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ReturnOrderForRevision",
+        "frequency": 2
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ReviewOrderInformation",
+        "frequency": 17
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "SubmitPurchaseOrder",
+        "frequency": 20
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ValidateQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ValidateTaxInformation",
+        "frequency": 2
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "VerifyLicensingInformation",
+        "frequency": 6
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "VerifyShipmentInformation",
+        "frequency": 3
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "CreateVendorOrder",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 9
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "ProcessShipment",
+        "frequency": 8
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "ReceiveGoods",
+        "frequency": 5
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "RequestTechnicalClarification",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "ValidateBOM",
+        "frequency": 21
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "ValidateQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "VerifyProductConfiguration",
+        "frequency": 64
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "VerifyShipmentInformation",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "CloseOrder",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ReceiveGoods",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "RequestVendorQuote",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ReturnOrderForRevision",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ReviewOrderInformation",
+        "frequency": 3
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ValidateQuotation",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ValidateTaxInformation",
+        "frequency": 62
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "VerifyProductConfiguration",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 66
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "CloseOrder",
+        "frequency": 2
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 11
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "CreateVendorOrder",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 3
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ReturnOrderForRevision",
+        "frequency": 6
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ReviewOrderInformation",
+        "frequency": 7
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "StockInInventory",
+        "frequency": 1
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ValidateQuotation",
+        "frequency": 4
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ValidateTaxInformation",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "CreateVendorOrder",
+        "frequency": 3
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 22
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "ProcessShipment",
+        "frequency": 9
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "ReceiveGoods",
+        "frequency": 27
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "StockInInventory",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 18
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "VerifyLicensingInformation",
+        "frequency": 9
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "VerifyShipmentInformation",
+        "frequency": 10
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "CreateVendorOrder",
+        "frequency": 11
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 13
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ProcessShipment",
+        "frequency": 13
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ReceiveGoods",
+        "frequency": 6
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 9
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "RequestTechnicalClarification",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "RequestVendorQuote",
+        "frequency": 4
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ReviewOrderInformation",
+        "frequency": 6
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "ValidateBOM",
+        "frequency": 7
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 24
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "VerifyLicensingInformation",
+        "frequency": 12
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "VerifyProductConfiguration",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 41
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "CloseOrder",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ConfirmCustomerOrder",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ProcessShipment",
+        "frequency": 5
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "RequestTechnicalClarification",
+        "frequency": 5
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ReviewOrderInformation",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ValidateBOM",
+        "frequency": 40
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ValidateQuotation",
+        "frequency": 28
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ValidateTaxInformation",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "VerifyProductConfiguration",
+        "frequency": 11
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 1
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "CreateVendorOrder",
+        "frequency": 20
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 14
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ProcessShipment",
+        "frequency": 51
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ReceiveGoods",
+        "frequency": 3
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 5
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "RequestVendorQuote",
+        "frequency": 2
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ValidateBOM",
+        "frequency": 6
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 10
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "VerifyLicensingInformation",
+        "frequency": 22
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "VerifyProductConfiguration",
+        "frequency": 3
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 11
+      }
+    ],
+    "cooccurring_object_types": [
+      "BOM",
+      "InventoryRecord",
+      "LicensingDocument",
+      "PurchaseOrder",
+      "ShipmentDocument",
+      "Vendor",
+      "VendorQuotation"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\Department__dfg.png"
+  },
+  {
+    "object_type": "InventoryRecord",
+    "object_instance_count": 50,
+    "n_activities": 6,
+    "n_df_edges": 6,
+    "activities": [
+      "CloseOrder",
+      "ReceiveGoods",
+      "ReturnOrderForRevision",
+      "StockInInventory",
+      "ValidateTaxInformation",
+      "VerifyGoodsReceipt"
+    ],
+    "directly_follows": [
+      {
+        "source": "ReceiveGoods",
+        "target": "StockInInventory",
+        "frequency": 50
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ValidateTaxInformation",
+        "frequency": 7
+      },
+      {
+        "source": "StockInInventory",
+        "target": "CloseOrder",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ReturnOrderForRevision",
+        "frequency": 7
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 50
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "ReceiveGoods",
+        "frequency": 50
+      }
+    ],
+    "cooccurring_object_types": [
+      "Department",
+      "PurchaseOrder",
+      "ShipmentDocument"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\InventoryRecord__dfg.png"
+  },
+  {
+    "object_type": "LicensingDocument",
+    "object_instance_count": 50,
+    "n_activities": 0,
+    "n_df_edges": 0,
+    "activities": [],
+    "directly_follows": [],
+    "cooccurring_object_types": [
+      "Department",
+      "PurchaseOrder"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\LicensingDocument__dfg.png"
+  },
+  {
+    "object_type": "PurchaseOrder",
+    "object_instance_count": 50,
+    "n_activities": 16,
+    "n_df_edges": 17,
+    "activities": [
+      "ApproveFinancialDocuments",
+      "CloseOrder",
+      "ConfirmCustomerOrder",
+      "CreateVendorOrder",
+      "EstimateDeliveryTimeline",
+      "ProcessShipment",
+      "RequestAdditionalInformation",
+      "RequestVendorQuote",
+      "ReturnOrderForRevision",
+      "ReviewOrderInformation",
+      "StockInInventory",
+      "SubmitPurchaseOrder",
+      "ValidateQuotation",
+      "ValidateTaxInformation",
+      "VerifyLicensingInformation",
+      "VerifyShipmentInformation"
+    ],
+    "directly_follows": [
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "CreateVendorOrder",
+        "frequency": 50
+      },
+      {
+        "source": "ConfirmCustomerOrder",
+        "target": "SubmitPurchaseOrder",
+        "frequency": 50
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "VerifyLicensingInformation",
+        "frequency": 50
+      },
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "StockInInventory",
+        "frequency": 50
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 50
+      },
+      {
+        "source": "RequestAdditionalInformation",
+        "target": "ReviewOrderInformation",
+        "frequency": 10
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ValidateQuotation",
+        "frequency": 50
+      },
+      {
+        "source": "ReturnOrderForRevision",
+        "target": "ValidateTaxInformation",
+        "frequency": 7
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "RequestAdditionalInformation",
+        "frequency": 10
+      },
+      {
+        "source": "ReviewOrderInformation",
+        "target": "RequestVendorQuote",
+        "frequency": 50
+      },
+      {
+        "source": "StockInInventory",
+        "target": "CloseOrder",
+        "frequency": 50
+      },
+      {
+        "source": "SubmitPurchaseOrder",
+        "target": "ReviewOrderInformation",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ValidateTaxInformation",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateTaxInformation",
+        "target": "ReturnOrderForRevision",
+        "frequency": 7
+      },
+      {
+        "source": "VerifyLicensingInformation",
+        "target": "VerifyShipmentInformation",
+        "frequency": 50
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ProcessShipment",
+        "frequency": 50
+      }
+    ],
+    "cooccurring_object_types": [
+      "Department",
+      "InventoryRecord",
+      "LicensingDocument",
+      "ShipmentDocument",
+      "Vendor",
+      "VendorQuotation"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\PurchaseOrder__dfg.png"
+  },
+  {
+    "object_type": "ShipmentDocument",
+    "object_instance_count": 50,
+    "n_activities": 5,
+    "n_df_edges": 4,
+    "activities": [
+      "EstimateDeliveryTimeline",
+      "ProcessShipment",
+      "ReceiveGoods",
+      "VerifyGoodsReceipt",
+      "VerifyShipmentInformation"
+    ],
+    "directly_follows": [
+      {
+        "source": "EstimateDeliveryTimeline",
+        "target": "VerifyGoodsReceipt",
+        "frequency": 50
+      },
+      {
+        "source": "ProcessShipment",
+        "target": "EstimateDeliveryTimeline",
+        "frequency": 50
+      },
+      {
+        "source": "VerifyGoodsReceipt",
+        "target": "ReceiveGoods",
+        "frequency": 50
+      },
+      {
+        "source": "VerifyShipmentInformation",
+        "target": "ProcessShipment",
+        "frequency": 50
+      }
+    ],
+    "cooccurring_object_types": [
+      "Department",
+      "InventoryRecord",
+      "PurchaseOrder"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\ShipmentDocument__dfg.png"
+  },
+  {
+    "object_type": "Vendor",
+    "object_instance_count": 3,
+    "n_activities": 4,
+    "n_df_edges": 15,
+    "activities": [
+      "CreateVendorOrder",
+      "ReceiveVendorQuotation",
+      "RequestTechnicalClarification",
+      "RequestVendorQuote"
+    ],
+    "directly_follows": [
+      {
+        "source": "CreateVendorOrder",
+        "target": "CreateVendorOrder",
+        "frequency": 3
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 21
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "RequestTechnicalClarification",
+        "frequency": 1
+      },
+      {
+        "source": "CreateVendorOrder",
+        "target": "RequestVendorQuote",
+        "frequency": 22
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "CreateVendorOrder",
+        "frequency": 33
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 1
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "RequestTechnicalClarification",
+        "frequency": 10
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "RequestVendorQuote",
+        "frequency": 6
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "CreateVendorOrder",
+        "frequency": 2
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 2
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "RequestTechnicalClarification",
+        "frequency": 1
+      },
+      {
+        "source": "RequestTechnicalClarification",
+        "target": "RequestVendorQuote",
+        "frequency": 7
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "CreateVendorOrder",
+        "frequency": 12
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 26
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "RequestVendorQuote",
+        "frequency": 12
+      }
+    ],
+    "cooccurring_object_types": [
+      "BOM",
+      "Department",
+      "PurchaseOrder",
+      "VendorQuotation"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\Vendor__dfg.png"
+  },
+  {
+    "object_type": "VendorQuotation",
+    "object_instance_count": 50,
+    "n_activities": 7,
+    "n_df_edges": 7,
+    "activities": [
+      "ApproveFinancialDocuments",
+      "CreateVendorOrder",
+      "ReceiveVendorQuotation",
+      "RequestVendorQuote",
+      "ValidateBOM",
+      "ValidateQuotation",
+      "VerifyProductConfiguration"
+    ],
+    "directly_follows": [
+      {
+        "source": "ApproveFinancialDocuments",
+        "target": "CreateVendorOrder",
+        "frequency": 50
+      },
+      {
+        "source": "ReceiveVendorQuotation",
+        "target": "ValidateBOM",
+        "frequency": 50
+      },
+      {
+        "source": "RequestVendorQuote",
+        "target": "ReceiveVendorQuotation",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "ValidateBOM",
+        "frequency": 12
+      },
+      {
+        "source": "ValidateBOM",
+        "target": "VerifyProductConfiguration",
+        "frequency": 50
+      },
+      {
+        "source": "ValidateQuotation",
+        "target": "ApproveFinancialDocuments",
+        "frequency": 50
+      },
+      {
+        "source": "VerifyProductConfiguration",
+        "target": "ValidateQuotation",
+        "frequency": 50
+      }
+    ],
+    "cooccurring_object_types": [
+      "BOM",
+      "Department",
+      "PurchaseOrder",
+      "Vendor"
+    ],
+    "dfg_png": "./Results/NTS-ocdfg/visualizations\\VendorQuotation__dfg.png"
+  }
+]

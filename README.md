@@ -26,7 +26,7 @@ crm_monitoring/
 │       ├── metrics.py                             # Precision, Recall, F1-score
 │       └── run_evaluation.py                      # Evaluation Instance entry point
 ├── data/
-│   ├── order-management.json                      # OCEL event log (input)
+│   ├── dataset_simulation/Data/Order_procurement/outputs/NTS_OCEL_2026.json  # OCEL event log (input)
 │   ├── rule_specification.csv                     # Governance rules (input)
 │   └── ground_truth.csv                           # Manual violations (input)
 ├── output/                                        # All generated outputs land here
@@ -85,7 +85,7 @@ This runs all three instances in sequence and writes the following files to `out
 ```bash
 python main.py \
   --rule-spec  data/rule_specification.csv \
-  --ocel       data/order-management.json \
+  --ocel       data/dataset_simulation/Data/Order_procurement/outputs/NTS_OCEL_2026.json \
   --ground-truth data/ground_truth.csv \
   --output-dir output/
 ```
@@ -103,7 +103,7 @@ python main.py --skip-evaluation
 ```
 INPUTS
   rule_specification.csv  ──►  RULE DESIGN INSTANCE
-  order-management.json   ──►  MONITORING INSTANCE
+  NTS_OCEL_2026.json      ──►  MONITORING INSTANCE
   ground_truth.csv        ──►  EVALUATION INSTANCE
 
 RULE DESIGN INSTANCE
