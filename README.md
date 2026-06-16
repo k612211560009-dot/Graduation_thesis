@@ -80,7 +80,7 @@ The framework consists of:
 - Monitoring Instance
 - Evaluation Instance
 
-![alt text](image.png)
+![alt text](development_framework.png)
 
 ```bash
 python main.py
