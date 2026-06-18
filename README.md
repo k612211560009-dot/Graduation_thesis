@@ -6,7 +6,7 @@ This GitHub repository accompanies the practical thesis titled "Improving Inter-
 
 ## Overall pipeline
 
-## ![alt text](e2e_pipeline.png)
+![alt text](e2e_pipeline.png)
 
 ## Prerequisites
 
